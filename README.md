@@ -25,9 +25,9 @@ Options
    You could register the same app with different options and shortcut  
    (Some apps does not allow multiple windows)
 
-*Notice
-There is already taken global shorcuts by macOS (ex opt+cmd+D is Dock hiding on/off)
-You can check it from System Preferences -> Keyboard -> Shortcuts
+Notice  
+There is already taken global shorcuts by macOS (ex opt+cmd+D is Dock Hiding)  
+You can manage it from System Preferences -> Keyboard -> Shortcuts
 
 ## Installation
 It's available on [App Store](https://apps.apple.com/us/app/asap-shortcuts/id1558863477)
