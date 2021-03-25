@@ -13,29 +13,29 @@ New Window on the current space with a single shortcut press.
 
 <img src="public/asap_demo.gif" width=500>
 
-No more mouse moving and clicking for New Window menu.
+No more! mouse moving and clicking for New Window menu.
 
 ## About ASAP
 
-It is simple and lightweight app for Global Shortcuts for macOS
-
 Options  
  * Open the existing app first (default)  
- 
-   If there the exist app in other space then you get draged to other space. (macOS behavior)
+   If the app exists in another space then you get dragged to that space. (macOS behavior)
    
  * Always spawn a New Window on the current desktop  
- 
-   You could register the same app with different options and shorcut  
+   You could register the same app with different options and shortcut  
    (Some apps does not allow multiple windows)
+
+*Notice
+There is already taken global shorcuts by macOS (ex opt+cmd+D is Dock hiding on/off)
+You can check it from System Preferences -> Keyboard -> Shortcuts
 
 ## Installation
 It's available on [App Store](https://apps.apple.com/us/app/asap-shortcuts/id1558863477)
 
-## Project Dependences  
+## Dependences  
 ASAP uses [MASShortcut](https://github.com/shpakovski/MASShortcut) for keyboard shortcut recording.
 
-## System Requirements
+## Requirements
 ASAP supports macOS v10.15+
 
 ## License
