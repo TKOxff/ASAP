@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4792A55BCF0C70015F9CDD2F /* Pods_ASAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */; };
+		BB56D11626019271007F4BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11526019271007F4BC8 /* AppDelegate.swift */; };
+		BB56D11826019271007F4BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11726019271007F4BC8 /* ContentView.swift */; };
+		BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB56D11926019271007F4BC8 /* Assets.xcassets */; };
+		BB56D11D26019271007F4BC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB56D11C26019271007F4BC8 /* Preview Assets.xcassets */; };
+		BB56D12026019271007F4BC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB56D11E26019271007F4BC8 /* Main.storyboard */; };
+		BB56D13E2601C1F7007F4BC8 /* ShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */; };
+		BB56D1402601C1F7007F4BC8 /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1372601C1F7007F4BC8 /* AppRow.swift */; };
+		BB56D1412601C1F7007F4BC8 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1382601C1F7007F4BC8 /* OptionView.swift */; };
+		BB56D1422601C1F7007F4BC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1392601C1F7007F4BC8 /* CheckBox.swift */; };
+		BB56D1432601C1F7007F4BC8 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D13A2601C1F7007F4BC8 /* AppItem.swift */; };
+		BB56D1442601C1F7007F4BC8 /* AppOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D13B2601C1F7007F4BC8 /* AppOptionView.swift */; };
+		BB56D1452601C1F7007F4BC8 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D13C2601C1F7007F4BC8 /* AddButton.swift */; };
+		BB56D1462601C1F7007F4BC8 /* RemoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D13D2601C1F7007F4BC8 /* RemoveButton.swift */; };
+		BB56D1502601C2FE007F4BC8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D14F2601C2FE007F4BC8 /* AppState.swift */; };
+		BB56D1582601C354007F4BC8 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1532601C354007F4BC8 /* UserDefault.swift */; };
+		BB56D1592601C354007F4BC8 /* StringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1542601C354007F4BC8 /* StringEx.swift */; };
+		BB56D15A2601C354007F4BC8 /* DateEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1552601C354007F4BC8 /* DateEx.swift */; };
+		BB56D15B2601C354007F4BC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1562601C354007F4BC8 /* Constants.swift */; };
+		BB56D15C2601C354007F4BC8 /* LoginLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D1572601C354007F4BC8 /* LoginLaunch.swift */; };
+		BB56D181260227A9007F4BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D180260227A9007F4BC8 /* AppDelegate.swift */; };
+		BB56D19B2602291B007F4BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D19A2602291B007F4BC8 /* main.swift */; };
+		BB56D19F2602295E007F4BC8 /* ASAPLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB56D1A426022ABC007F4BC8 /* Credits.rtf */; };
+		BB9DED3D260A047200B4DE94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB9DED3C260A047200B4DE94 /* README.md */; };
+		BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC475D26037C7000B12556 /* AppStoreReview.swift */; };
+		BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC47CD2604C89E00B12556 /* BundleEx.swift */; };
+		BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6EF29260241B9005122C3 /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB56D19E26022947007F4BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				BB56D19F2602295E007F4BC8 /* ASAPLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		611A0A93D8904714D04EAC69 /* Pods-ASAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAP.release.xcconfig"; path = "Target Support Files/Pods-ASAP/Pods-ASAP.release.xcconfig"; sourceTree = "<group>"; };
+		BB56D11226019271007F4BC8 /* ASAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB56D11526019271007F4BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB56D11726019271007F4BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB56D11926019271007F4BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB56D11C26019271007F4BC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB56D11F26019271007F4BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB56D12126019271007F4BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB56D12226019271007F4BC8 /* ASAP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASAP.entitlements; sourceTree = "<group>"; };
+		BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutView.swift; sourceTree = "<group>"; };
+		BB56D1372601C1F7007F4BC8 /* AppRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
+		BB56D1382601C1F7007F4BC8 /* OptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		BB56D1392601C1F7007F4BC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		BB56D13A2601C1F7007F4BC8 /* AppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
+		BB56D13B2601C1F7007F4BC8 /* AppOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOptionView.swift; sourceTree = "<group>"; };
+		BB56D13C2601C1F7007F4BC8 /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		BB56D13D2601C1F7007F4BC8 /* RemoveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveButton.swift; sourceTree = "<group>"; };
+		BB56D14F2601C2FE007F4BC8 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BB56D1532601C354007F4BC8 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		BB56D1542601C354007F4BC8 /* StringEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEx.swift; sourceTree = "<group>"; };
+		BB56D1552601C354007F4BC8 /* DateEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateEx.swift; sourceTree = "<group>"; };
+		BB56D1562601C354007F4BC8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB56D1572601C354007F4BC8 /* LoginLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLaunch.swift; sourceTree = "<group>"; };
+		BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAPLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB56D180260227A9007F4BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB56D189260227AA007F4BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB56D18A260227AA007F4BC8 /* ASAPLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASAPLauncher.entitlements; sourceTree = "<group>"; };
+		BB56D19A2602291B007F4BC8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BB56D1A426022ABC007F4BC8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		BB9DED3C260A047200B4DE94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBDC475D26037C7000B12556 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
+		BBDC47CD2604C89E00B12556 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
+		BBE6EF29260241B9005122C3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		DB6D439122F2F96FDC34F9DB /* Pods-ASAP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAP.debug.xcconfig"; path = "Target Support Files/Pods-ASAP/Pods-ASAP.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB56D10F26019271007F4BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4792A55BCF0C70015F9CDD2F /* Pods_ASAP.framework in Frameworks */,
+				BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB56D17B260227A9007F4BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C6A416FD99EC6343946E2F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D439122F2F96FDC34F9DB /* Pods-ASAP.debug.xcconfig */,
+				611A0A93D8904714D04EAC69 /* Pods-ASAP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94BF40E0DE4D7953BA8C34BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6EF29260241B9005122C3 /* ServiceManagement.framework */,
+				165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB56D10926019271007F4BC8 = {
+			isa = PBXGroup;
+			children = (
+				BB9DED3C260A047200B4DE94 /* README.md */,
+				BB56D11426019271007F4BC8 /* ASAP */,
+				BB56D17F260227A9007F4BC8 /* ASAPLauncher */,
+				BB56D11326019271007F4BC8 /* Products */,
+				2C6A416FD99EC6343946E2F6 /* Pods */,
+				94BF40E0DE4D7953BA8C34BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB56D11326019271007F4BC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D11226019271007F4BC8 /* ASAP.app */,
+				BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB56D11426019271007F4BC8 /* ASAP */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D11526019271007F4BC8 /* AppDelegate.swift */,
+				BB56D14F2601C2FE007F4BC8 /* AppState.swift */,
+				BB56D1342601C1AE007F4BC8 /* Views */,
+				BBDC47D12604C8CD00B12556 /* Extentions */,
+				BB56D1522601C32A007F4BC8 /* Helpers */,
+				BB56D1302601C13B007F4BC8 /* Supporting Files */,
+				BB56D11B26019271007F4BC8 /* Preview Content */,
+			);
+			path = ASAP;
+			sourceTree = "<group>";
+		};
+		BB56D11B26019271007F4BC8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D11C26019271007F4BC8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB56D1302601C13B007F4BC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D1A426022ABC007F4BC8 /* Credits.rtf */,
+				BB56D11926019271007F4BC8 /* Assets.xcassets */,
+				BB56D11E26019271007F4BC8 /* Main.storyboard */,
+				BB56D12126019271007F4BC8 /* Info.plist */,
+				BB56D12226019271007F4BC8 /* ASAP.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB56D1342601C1AE007F4BC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D11726019271007F4BC8 /* ContentView.swift */,
+				BB56D13A2601C1F7007F4BC8 /* AppItem.swift */,
+				BB56D1372601C1F7007F4BC8 /* AppRow.swift */,
+				BB56D13B2601C1F7007F4BC8 /* AppOptionView.swift */,
+				BB56D13C2601C1F7007F4BC8 /* AddButton.swift */,
+				BB56D13D2601C1F7007F4BC8 /* RemoveButton.swift */,
+				BB56D1392601C1F7007F4BC8 /* CheckBox.swift */,
+				BB56D1382601C1F7007F4BC8 /* OptionView.swift */,
+				BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BB56D1522601C32A007F4BC8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D1562601C354007F4BC8 /* Constants.swift */,
+				BB56D1572601C354007F4BC8 /* LoginLaunch.swift */,
+				BBDC475D26037C7000B12556 /* AppStoreReview.swift */,
+				BB56D1532601C354007F4BC8 /* UserDefault.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		BB56D17F260227A9007F4BC8 /* ASAPLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D180260227A9007F4BC8 /* AppDelegate.swift */,
+				BB56D19A2602291B007F4BC8 /* main.swift */,
+				BB56D189260227AA007F4BC8 /* Info.plist */,
+				BB56D18A260227AA007F4BC8 /* ASAPLauncher.entitlements */,
+			);
+			path = ASAPLauncher;
+			sourceTree = "<group>";
+		};
+		BBDC47D12604C8CD00B12556 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC47CD2604C89E00B12556 /* BundleEx.swift */,
+				BB56D1552601C354007F4BC8 /* DateEx.swift */,
+				BB56D1542601C354007F4BC8 /* StringEx.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB56D11126019271007F4BC8 /* ASAP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP" */;
+			buildPhases = (
+				82E7C1EF8CA95BA6B89C6A29 /* [CP] Check Pods Manifest.lock */,
+				BB56D10E26019271007F4BC8 /* Sources */,
+				BB56D10F26019271007F4BC8 /* Frameworks */,
+				BB56D11026019271007F4BC8 /* Resources */,
+				1A749C27AC9A20E5E5DB5AD8 /* [CP] Embed Pods Frameworks */,
+				BB56D19E26022947007F4BC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASAP;
+			productName = ASAP;
+			productReference = BB56D11226019271007F4BC8 /* ASAP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB56D17D260227A9007F4BC8 /* ASAPLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB56D18B260227AA007F4BC8 /* Build configuration list for PBXNativeTarget "ASAPLauncher" */;
+			buildPhases = (
+				BB56D17A260227A9007F4BC8 /* Sources */,
+				BB56D17B260227A9007F4BC8 /* Frameworks */,
+				BB56D17C260227A9007F4BC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASAPLauncher;
+			productName = ASAPLauncher;
+			productReference = BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB56D10A26019271007F4BC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BB56D11126019271007F4BC8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BB56D17D260227A9007F4BC8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BB56D10D26019271007F4BC8 /* Build configuration list for PBXProject "ASAP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB56D10926019271007F4BC8;
+			productRefGroup = BB56D11326019271007F4BC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB56D11126019271007F4BC8 /* ASAP */,
+				BB56D17D260227A9007F4BC8 /* ASAPLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB56D11026019271007F4BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB56D12026019271007F4BC8 /* Main.storyboard in Resources */,
+				BB56D11D26019271007F4BC8 /* Preview Assets.xcassets in Resources */,
+				BB9DED3D260A047200B4DE94 /* README.md in Resources */,
+				BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */,
+				BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB56D17C260227A9007F4BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A749C27AC9A20E5E5DB5AD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ASAP/Pods-ASAP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ASAP/Pods-ASAP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ASAP/Pods-ASAP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82E7C1EF8CA95BA6B89C6A29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ASAP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB56D10E26019271007F4BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB56D15C2601C354007F4BC8 /* LoginLaunch.swift in Sources */,
+				BB56D1432601C1F7007F4BC8 /* AppItem.swift in Sources */,
+				BB56D13E2601C1F7007F4BC8 /* ShortcutView.swift in Sources */,
+				BB56D1442601C1F7007F4BC8 /* AppOptionView.swift in Sources */,
+				BB56D1452601C1F7007F4BC8 /* AddButton.swift in Sources */,
+				BB56D1412601C1F7007F4BC8 /* OptionView.swift in Sources */,
+				BB56D15B2601C354007F4BC8 /* Constants.swift in Sources */,
+				BB56D11826019271007F4BC8 /* ContentView.swift in Sources */,
+				BB56D1502601C2FE007F4BC8 /* AppState.swift in Sources */,
+				BB56D1422601C1F7007F4BC8 /* CheckBox.swift in Sources */,
+				BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */,
+				BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */,
+				BB56D1582601C354007F4BC8 /* UserDefault.swift in Sources */,
+				BB56D11626019271007F4BC8 /* AppDelegate.swift in Sources */,
+				BB56D1462601C1F7007F4BC8 /* RemoveButton.swift in Sources */,
+				BB56D1592601C354007F4BC8 /* StringEx.swift in Sources */,
+				BB56D15A2601C354007F4BC8 /* DateEx.swift in Sources */,
+				BB56D1402601C1F7007F4BC8 /* AppRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB56D17A260227A9007F4BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB56D19B2602291B007F4BC8 /* main.swift in Sources */,
+				BB56D181260227A9007F4BC8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB56D11E26019271007F4BC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB56D11F26019271007F4BC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB56D12326019271007F4BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB56D12426019271007F4BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB56D12626019271007F4BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6D439122F2F96FDC34F9DB /* Pods-ASAP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
+				DEVELOPMENT_TEAM = B88B4NCP9B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ASAP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB56D12726019271007F4BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611A0A93D8904714D04EAC69 /* Pods-ASAP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
+				DEVELOPMENT_TEAM = B88B4NCP9B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ASAP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BB56D18C260227AA007F4BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ASAPLauncher/ASAPLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = B88B4NCP9B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ASAPLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAPLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB56D18D260227AA007F4BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ASAPLauncher/ASAPLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = B88B4NCP9B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ASAPLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAPLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB56D10D26019271007F4BC8 /* Build configuration list for PBXProject "ASAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB56D12326019271007F4BC8 /* Debug */,
+				BB56D12426019271007F4BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB56D12626019271007F4BC8 /* Debug */,
+				BB56D12726019271007F4BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB56D18B260227AA007F4BC8 /* Build configuration list for PBXNativeTarget "ASAPLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB56D18C260227AA007F4BC8 /* Debug */,
+				BB56D18D260227AA007F4BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB56D10A26019271007F4BC8 /* Project object */;
+}

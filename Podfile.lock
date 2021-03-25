@@ -1,0 +1,16 @@
+PODS:
+  - MASShortcut (2.4.0)
+
+DEPENDENCIES:
+  - MASShortcut
+
+SPEC REPOS:
+  trunk:
+    - MASShortcut
+
+SPEC CHECKSUMS:
+  MASShortcut: d9e4909e878661cc42877cc9d6efbe638273ab57
+
+PODFILE CHECKSUM: d2400ea75ddc294f16f7b723f13a95eeabebaa98
+
+COCOAPODS: 1.10.1
