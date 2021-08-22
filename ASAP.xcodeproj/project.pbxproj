@@ -33,6 +33,7 @@
 		BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB56D1A426022ABC007F4BC8 /* Credits.rtf */; };
 		BB9DED3D260A047200B4DE94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB9DED3C260A047200B4DE94 /* README.md */; };
 		BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBA1D2FB26D22C1400FED999 /* .gitignore */; };
+		BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1D2FF26D236BC00FED999 /* TooltipView.swift */; };
 		BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC475D26037C7000B12556 /* AppStoreReview.swift */; };
 		BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC47CD2604C89E00B12556 /* BundleEx.swift */; };
 		BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6EF29260241B9005122C3 /* ServiceManagement.framework */; };
@@ -84,6 +85,7 @@
 		BB56D1A426022ABC007F4BC8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		BB9DED3C260A047200B4DE94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBA1D2FB26D22C1400FED999 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BBA1D2FF26D236BC00FED999 /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
 		BBDC475D26037C7000B12556 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
 		BBDC47CD2604C89E00B12556 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
 		BBE6EF29260241B9005122C3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -196,6 +198,7 @@
 				BB56D1392601C1F7007F4BC8 /* CheckBox.swift */,
 				BB56D1382601C1F7007F4BC8 /* OptionView.swift */,
 				BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */,
+				BBA1D2FF26D236BC00FED999 /* TooltipView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				BB56D1432601C1F7007F4BC8 /* AppItem.swift in Sources */,
 				BB56D13E2601C1F7007F4BC8 /* ShortcutView.swift in Sources */,
 				BB56D1442601C1F7007F4BC8 /* AppOptionView.swift in Sources */,
+				BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */,
 				BB56D1452601C1F7007F4BC8 /* AddButton.swift in Sources */,
 				BB56D1412601C1F7007F4BC8 /* OptionView.swift in Sources */,
 				BB56D15B2601C354007F4BC8 /* Constants.swift in Sources */,
@@ -546,7 +550,7 @@
 				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
 				DEVELOPMENT_TEAM = B88B4NCP9B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -557,7 +561,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.9.1;
+				MARKETING_VERSION = 0.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -573,7 +577,7 @@
 				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
 				DEVELOPMENT_TEAM = B88B4NCP9B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -584,7 +588,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.9.1;
+				MARKETING_VERSION = 0.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

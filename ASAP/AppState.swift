@@ -19,6 +19,9 @@ class AppState: ObservableObject {
   @UserDefault("isFirstAppLaunching", defaultValue: true)
   static var isFirstAppLaunching: Bool
 
+  @UserDefault("isShowTooltip", defaultValue: true)
+  static var isShowTooltip: Bool
+  
   @UserDefault("isStartAtLogin", defaultValue: false)
   static var isStartAtLogin: Bool
 
@@ -39,6 +42,8 @@ class AppState: ObservableObject {
       AppStoreReview.firstLaunchDate = Date()
       print("firstLaunchDate:\(AppStoreReview.firstLaunchDate)")
     }
+    
+    print("load isShowTooltip:\(AppState.isShowTooltip)")
   }
   
   func getDocumentsDirectory() -> URL {
@@ -122,19 +127,9 @@ class AppState: ObservableObject {
         shortcut: MASShortcut.init(keyCode: Int(kVK_ANSI_Comma), modifierFlags: optCmdFlags)
       ),
       (
-        app: NSMetadataItem(url: URL(string: "file:///System/Applications/Utilities/Activity%20Monitor.app")!),
-        shortcut: MASShortcut.init(keyCode: Int(kVK_ANSI_A), modifierFlags: optCmdFlags)
-      ),
-      (
-        app: NSMetadataItem(url: URL(string: "file:///System/Applications/Utilities/Terminal.app")!),
-        shortcut: MASShortcut.init(keyCode: Int(kVK_ANSI_T), modifierFlags: optCmdFlags)
-      )
-      ,
-      (
         app: NSMetadataItem(url: URL(string: "file:///System/Library/CoreServices/Finder.app")!),
         shortcut: MASShortcut.init(keyCode: Int(kVK_ANSI_N), modifierFlags: optCmdFlags)
       )
-      
     ]
 
     for (item, shortcut) in defaultApps {
@@ -161,7 +156,11 @@ class AppState: ObservableObject {
     
     EnableLoginLauncher(enable: flag)
   }
-  
+
+  static func updateShowTooltip(flag: Bool) {
+    AppState.isShowTooltip = flag
+  }
+
   private func printAppDebug() {
 #if DEBUG
     for app in appItems {
