@@ -32,6 +32,7 @@
 		BB56D19F2602295E007F4BC8 /* ASAPLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB56D1A426022ABC007F4BC8 /* Credits.rtf */; };
 		BB9DED3D260A047200B4DE94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB9DED3C260A047200B4DE94 /* README.md */; };
+		BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBA1D2FB26D22C1400FED999 /* .gitignore */; };
 		BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC475D26037C7000B12556 /* AppStoreReview.swift */; };
 		BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC47CD2604C89E00B12556 /* BundleEx.swift */; };
 		BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6EF29260241B9005122C3 /* ServiceManagement.framework */; };
@@ -82,6 +83,7 @@
 		BB56D19A2602291B007F4BC8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BB56D1A426022ABC007F4BC8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		BB9DED3C260A047200B4DE94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBA1D2FB26D22C1400FED999 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BBDC475D26037C7000B12556 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
 		BBDC47CD2604C89E00B12556 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
 		BBE6EF29260241B9005122C3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -129,6 +131,7 @@
 		BB56D10926019271007F4BC8 = {
 			isa = PBXGroup;
 			children = (
+				BBA1D2FB26D22C1400FED999 /* .gitignore */,
 				BB9DED3C260A047200B4DE94 /* README.md */,
 				BB56D11426019271007F4BC8 /* ASAP */,
 				BB56D17F260227A9007F4BC8 /* ASAPLauncher */,
@@ -314,6 +317,7 @@
 				BB56D11D26019271007F4BC8 /* Preview Assets.xcassets in Resources */,
 				BB9DED3D260A047200B4DE94 /* README.md in Resources */,
 				BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */,
+				BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */,
 				BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
