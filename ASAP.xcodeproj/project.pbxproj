@@ -31,9 +31,11 @@
 		BB56D19B2602291B007F4BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D19A2602291B007F4BC8 /* main.swift */; };
 		BB56D19F2602295E007F4BC8 /* ASAPLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB56D1A426022ABC007F4BC8 /* Credits.rtf */; };
+		BB64E87426D46B2B002DC4F1 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB64E87326D46B2B002DC4F1 /* TextView.swift */; };
 		BB9DED3D260A047200B4DE94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB9DED3C260A047200B4DE94 /* README.md */; };
 		BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBA1D2FB26D22C1400FED999 /* .gitignore */; };
 		BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1D2FF26D236BC00FED999 /* TooltipView.swift */; };
+		BBA1D30226D3300900FED999 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1D30126D3300900FED999 /* ContactView.swift */; };
 		BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC475D26037C7000B12556 /* AppStoreReview.swift */; };
 		BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC47CD2604C89E00B12556 /* BundleEx.swift */; };
 		BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6EF29260241B9005122C3 /* ServiceManagement.framework */; };
@@ -83,9 +85,11 @@
 		BB56D18A260227AA007F4BC8 /* ASAPLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASAPLauncher.entitlements; sourceTree = "<group>"; };
 		BB56D19A2602291B007F4BC8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BB56D1A426022ABC007F4BC8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		BB64E87326D46B2B002DC4F1 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		BB9DED3C260A047200B4DE94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBA1D2FB26D22C1400FED999 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BBA1D2FF26D236BC00FED999 /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
+		BBA1D30126D3300900FED999 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		BBDC475D26037C7000B12556 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
 		BBDC47CD2604C89E00B12556 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
 		BBE6EF29260241B9005122C3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -199,6 +203,8 @@
 				BB56D1382601C1F7007F4BC8 /* OptionView.swift */,
 				BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */,
 				BBA1D2FF26D236BC00FED999 /* TooltipView.swift */,
+				BBA1D30126D3300900FED999 /* ContactView.swift */,
+				BB64E87326D46B2B002DC4F1 /* TextView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -384,6 +390,8 @@
 				BB56D15C2601C354007F4BC8 /* LoginLaunch.swift in Sources */,
 				BB56D1432601C1F7007F4BC8 /* AppItem.swift in Sources */,
 				BB56D13E2601C1F7007F4BC8 /* ShortcutView.swift in Sources */,
+				BB64E87426D46B2B002DC4F1 /* TextView.swift in Sources */,
+				BBA1D30226D3300900FED999 /* ContactView.swift in Sources */,
 				BB56D1442601C1F7007F4BC8 /* AppOptionView.swift in Sources */,
 				BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */,
 				BB56D1452601C1F7007F4BC8 /* AddButton.swift in Sources */,
