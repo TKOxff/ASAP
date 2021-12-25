@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4792A55BCF0C70015F9CDD2F /* Pods_ASAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */; };
+		BB0E502F2776D6E500E53E0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0E50312776D6E500E53E0E /* Localizable.strings */; };
 		BB56D11626019271007F4BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11526019271007F4BC8 /* AppDelegate.swift */; };
 		BB56D11826019271007F4BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11726019271007F4BC8 /* ContentView.swift */; };
 		BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB56D11926019271007F4BC8 /* Assets.xcassets */; };
@@ -57,6 +58,10 @@
 /* Begin PBXFileReference section */
 		165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611A0A93D8904714D04EAC69 /* Pods-ASAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAP.release.xcconfig"; path = "Target Support Files/Pods-ASAP/Pods-ASAP.release.xcconfig"; sourceTree = "<group>"; };
+		BB0E502C2776CF4B00E53E0E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		BB0E50302776D6E500E53E0E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB0E50332776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		BB0E50342776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB56D11226019271007F4BC8 /* ASAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB56D11526019271007F4BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB56D11726019271007F4BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +191,7 @@
 				BB56D11E26019271007F4BC8 /* Main.storyboard */,
 				BB56D12126019271007F4BC8 /* Info.plist */,
 				BB56D12226019271007F4BC8 /* ASAP.entitlements */,
+				BB0E50312776D6E500E53E0E /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +311,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
 			);
 			mainGroup = BB56D10926019271007F4BC8;
 			productRefGroup = BB56D11326019271007F4BC8 /* Products */;
@@ -325,6 +333,7 @@
 				BB56D12026019271007F4BC8 /* Main.storyboard in Resources */,
 				BB56D11D26019271007F4BC8 /* Preview Assets.xcassets in Resources */,
 				BB9DED3D260A047200B4DE94 /* README.md in Resources */,
+				BB0E502F2776D6E500E53E0E /* Localizable.strings in Resources */,
 				BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */,
 				BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */,
 				BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */,
@@ -423,10 +432,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BB0E50312776D6E500E53E0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0E50302776D6E500E53E0E /* ko */,
+				BB0E50342776E04A00E53E0E /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BB56D11E26019271007F4BC8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BB56D11F26019271007F4BC8 /* Base */,
+				BB0E502C2776CF4B00E53E0E /* ko */,
+				BB0E50332776E04A00E53E0E /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -438,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -499,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.makeKeyAndOrderFront(nil)
     // should be option?
     window.collectionBehavior = NSWindow.CollectionBehavior.canJoinAllSpaces
-    window.title = Bundle.main.appName + " - Global Shortcuts"
+    window.title = Bundle.main.appName + " " + NSLocalizedString("Global Shortcuts", comment: "Global Shortcuts")
     
     #if DEBUG
     #else
