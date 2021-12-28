@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ASAP
+
+  Created by TKOxff on 2021/12/25.
+  
+*/
+
+"Launch at login" = "ログイン時に起動";
+"Show Tooltip" = "ヘルプを表示";
+"You can add a new App with the [+] button below." = "以下の [+] ボタンで新しいアプリを追加できます。";
+"Global Shortcuts" = "ショートカットキー";

@@ -14,10 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   var window: NSWindow!
   var appState = AppState()
+//  var contactView: ContactView!
   
   var statusItem: NSStatusItem?
   @IBOutlet weak var statusMenu: NSMenu?
   @IBOutlet weak var firstMenuItem: NSMenuItem?
+  @IBOutlet weak var contactMenuItem: NSMenuItem?
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     
@@ -47,13 +49,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.makeKeyAndOrderFront(nil)
     // should be option?
     window.collectionBehavior = NSWindow.CollectionBehavior.canJoinAllSpaces
-    window.title = Bundle.main.appName + " - Global Shortcuts"
-
-#if DEBUG
-#else
+    window.title = Bundle.main.appName + " " + NSLocalizedString("Global Shortcuts", comment: "Global Shortcuts")
+    
+    #if DEBUG
+    #else
     // hide window
     window.orderOut(nil)
-#endif
+    #endif
+    
+//    contactView = ContactView()
   }
   
   override func awakeFromNib() {
@@ -66,13 +70,42 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
   }
   
+  // Open the main window of ASAP
   @IBAction func menuPreferenceAction(_ sender: NSMenuItem) {
     window.orderFrontRegardless()
     
     AppStoreReview.checkRequest()
   }
   
+  
+  @IBAction func menuContactAction(_ sender: NSMenuItem) {
+    
+    SendEmail.send()
+    
+    // Open a sub window (POSTPONED)
+    // TODO: open a window at once.
+    //    let ctrl = NSHostingController(rootView: contactView)
+    //    let win = NSWindow(contentViewController: ctrl)
+    //    win.contentViewController = ctrl
+    //    win.title = "ASAP - Contact Developer"
+    //    win.isReleasedWhenClosed = false
+    //    win.makeKeyAndOrderFront(sender)
+    //    win.orderFrontRegardless()
+    //    win.center()
+  }
+  
   func applicationWillTerminate(_ aNotification: Notification) {
     appState.saveApps()
+  }
+}
+
+class SendEmail: NSObject {
+  static func send() {
+    let service = NSSharingService(named: NSSharingService.Name.composeEmail)!
+    service.recipients = ["tkoxff@gmail.com"]
+    service.subject = "About ASAP shortcuts App"
+    service.perform(withItems: [
+      "Let me know your opinion.\n당신의 의견을 알려주세요.\nご意見をお聞かせください。"
+    ])
   }
 }

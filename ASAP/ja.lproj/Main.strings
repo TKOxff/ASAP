@@ -1,0 +1,21 @@
+
+/* Class = "NSMenuItem"; title = "ASAP"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "ASAP";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "終了";
+
+/* Class = "NSMenuItem"; title = "About ASAP"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "ASAPについて";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "ショートカット設定…";
+
+/* Class = "NSMenuItem"; title = "Contact Developer"; ObjectID = "F41-PH-2d4"; */
+"F41-PH-2d4.title" = "開発者に連絡";
+
+/* Class = "NSMenu"; title = "ASAP"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "ASAP";

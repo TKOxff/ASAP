@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4792A55BCF0C70015F9CDD2F /* Pods_ASAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */; };
+		BB0E502F2776D6E500E53E0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0E50312776D6E500E53E0E /* Localizable.strings */; };
 		BB56D11626019271007F4BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11526019271007F4BC8 /* AppDelegate.swift */; };
 		BB56D11826019271007F4BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D11726019271007F4BC8 /* ContentView.swift */; };
 		BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB56D11926019271007F4BC8 /* Assets.xcassets */; };
@@ -31,8 +32,11 @@
 		BB56D19B2602291B007F4BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56D19A2602291B007F4BC8 /* main.swift */; };
 		BB56D19F2602295E007F4BC8 /* ASAPLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB56D1A426022ABC007F4BC8 /* Credits.rtf */; };
+		BB64E87426D46B2B002DC4F1 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB64E87326D46B2B002DC4F1 /* TextView.swift */; };
 		BB9DED3D260A047200B4DE94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB9DED3C260A047200B4DE94 /* README.md */; };
 		BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBA1D2FB26D22C1400FED999 /* .gitignore */; };
+		BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1D2FF26D236BC00FED999 /* TooltipView.swift */; };
+		BBA1D30226D3300900FED999 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1D30126D3300900FED999 /* ContactView.swift */; };
 		BBDC475E26037C7000B12556 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC475D26037C7000B12556 /* AppStoreReview.swift */; };
 		BBDC47CE2604C89E00B12556 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC47CD2604C89E00B12556 /* BundleEx.swift */; };
 		BBE6EF2A260241B9005122C3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6EF29260241B9005122C3 /* ServiceManagement.framework */; };
@@ -54,6 +58,10 @@
 /* Begin PBXFileReference section */
 		165C10B50232E0A9A6B3034F /* Pods_ASAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611A0A93D8904714D04EAC69 /* Pods-ASAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAP.release.xcconfig"; path = "Target Support Files/Pods-ASAP/Pods-ASAP.release.xcconfig"; sourceTree = "<group>"; };
+		BB0E502C2776CF4B00E53E0E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		BB0E50302776D6E500E53E0E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB0E50332776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		BB0E50342776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB56D11226019271007F4BC8 /* ASAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB56D11526019271007F4BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB56D11726019271007F4BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,8 +90,11 @@
 		BB56D18A260227AA007F4BC8 /* ASAPLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASAPLauncher.entitlements; sourceTree = "<group>"; };
 		BB56D19A2602291B007F4BC8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BB56D1A426022ABC007F4BC8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		BB64E87326D46B2B002DC4F1 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		BB9DED3C260A047200B4DE94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBA1D2FB26D22C1400FED999 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BBA1D2FF26D236BC00FED999 /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
+		BBA1D30126D3300900FED999 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		BBDC475D26037C7000B12556 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
 		BBDC47CD2604C89E00B12556 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
 		BBE6EF29260241B9005122C3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -180,6 +191,7 @@
 				BB56D11E26019271007F4BC8 /* Main.storyboard */,
 				BB56D12126019271007F4BC8 /* Info.plist */,
 				BB56D12226019271007F4BC8 /* ASAP.entitlements */,
+				BB0E50312776D6E500E53E0E /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -196,6 +208,9 @@
 				BB56D1392601C1F7007F4BC8 /* CheckBox.swift */,
 				BB56D1382601C1F7007F4BC8 /* OptionView.swift */,
 				BB56D1352601C1F7007F4BC8 /* ShortcutView.swift */,
+				BBA1D2FF26D236BC00FED999 /* TooltipView.swift */,
+				BBA1D30126D3300900FED999 /* ContactView.swift */,
+				BB64E87326D46B2B002DC4F1 /* TextView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -296,6 +311,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
 			);
 			mainGroup = BB56D10926019271007F4BC8;
 			productRefGroup = BB56D11326019271007F4BC8 /* Products */;
@@ -316,6 +333,7 @@
 				BB56D12026019271007F4BC8 /* Main.storyboard in Resources */,
 				BB56D11D26019271007F4BC8 /* Preview Assets.xcassets in Resources */,
 				BB9DED3D260A047200B4DE94 /* README.md in Resources */,
+				BB0E502F2776D6E500E53E0E /* Localizable.strings in Resources */,
 				BB56D11A26019271007F4BC8 /* Assets.xcassets in Resources */,
 				BBA1D2FC26D22C1400FED999 /* .gitignore in Resources */,
 				BB56D1A526022ABC007F4BC8 /* Credits.rtf in Resources */,
@@ -381,7 +399,10 @@
 				BB56D15C2601C354007F4BC8 /* LoginLaunch.swift in Sources */,
 				BB56D1432601C1F7007F4BC8 /* AppItem.swift in Sources */,
 				BB56D13E2601C1F7007F4BC8 /* ShortcutView.swift in Sources */,
+				BB64E87426D46B2B002DC4F1 /* TextView.swift in Sources */,
+				BBA1D30226D3300900FED999 /* ContactView.swift in Sources */,
 				BB56D1442601C1F7007F4BC8 /* AppOptionView.swift in Sources */,
+				BBA1D30026D236BC00FED999 /* TooltipView.swift in Sources */,
 				BB56D1452601C1F7007F4BC8 /* AddButton.swift in Sources */,
 				BB56D1412601C1F7007F4BC8 /* OptionView.swift in Sources */,
 				BB56D15B2601C354007F4BC8 /* Constants.swift in Sources */,
@@ -411,10 +432,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BB0E50312776D6E500E53E0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0E50302776D6E500E53E0E /* ko */,
+				BB0E50342776E04A00E53E0E /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BB56D11E26019271007F4BC8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BB56D11F26019271007F4BC8 /* Base */,
+				BB0E502C2776CF4B00E53E0E /* ko */,
+				BB0E50332776E04A00E53E0E /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -426,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -487,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -546,7 +580,7 @@
 				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
 				DEVELOPMENT_TEAM = B88B4NCP9B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -557,7 +591,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.9.1;
+				MARKETING_VERSION = 0.9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -573,7 +607,7 @@
 				CODE_SIGN_ENTITLEMENTS = ASAP/ASAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_ASSET_PATHS = "\"ASAP/Preview Content\"";
 				DEVELOPMENT_TEAM = B88B4NCP9B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -584,7 +618,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.9.1;
+				MARKETING_VERSION = 0.9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = TKOxff.ASAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

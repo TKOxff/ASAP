@@ -11,28 +11,35 @@ class AppOptionModel: ObservableObject {
   @Published var startAtLogin: Bool = AppState.isStartAtLogin {
     didSet {
       AppState.updateStartAtLogin(flag: self.startAtLogin)
-      print("isStartAtLogin: \(AppState.isStartAtLogin)")
     }
   }
 }
 
 struct AppOptionView: View {
   @ObservedObject var vm = AppOptionModel()
-  
+  @Binding var isShow: Bool
+
   var body: some View {
     HStack {
+      CheckBox(enable: self.$isShow)
+      Text("Show Tooltip")
+      
+      Spacer();
+      
       Text("Launch at login")
       CheckBox(enable: self.$vm.startAtLogin)
     }
     .foregroundColor(.gray)
-    .frame(maxWidth: .infinity, alignment: .trailing)
     .padding()
-    .padding(.trailing)
+    .padding([.trailing, .leading])
   }
 }
 
 struct AppOptionView_Previews: PreviewProvider {
   static var previews: some View {
-    AppOptionView()
+    AppOptionView(
+      isShow: .constant(true)
+    )
+//      .environmentObject(AppState())
   }
 }

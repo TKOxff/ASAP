@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ASAP
+
+  Created by TKOxff on 2021/12/25.
+  
+*/
+
+"Launch at login" = "로그인 시 실행";
+"Show Tooltip" = "도움말 보기";
+"You can add a new App with the [+] button below." = "아래의 [+] 버튼으로 새로운 단축키를 추가 할 수 있습니다.";
+"Global Shortcuts" = "단축키";
