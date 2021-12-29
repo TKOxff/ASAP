@@ -10,3 +10,6 @@
 "Show Tooltip" = "도움말 보기";
 "You can add a new App with the [+] button below." = "아래의 [+] 버튼으로 새로운 단축키를 추가 할 수 있습니다.";
 "Global Shortcuts" = "단축키";
+"How to launch the app" = "앱을 실행하는 방식";
+"Open the exist one first (default)" = "이미 열려있는 앱 먼저 열기 (기본)";
+"Always Spawn a new instance at current desktop" = "현재의 스페이스에서 항상 새롭게 실행";

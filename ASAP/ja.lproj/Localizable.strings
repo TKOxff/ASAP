@@ -10,3 +10,6 @@
 "Show Tooltip" = "ヘルプを表示";
 "You can add a new App with the [+] button below." = "以下の [+] ボタンで新しいアプリを追加できます。";
 "Global Shortcuts" = "ショートカットキー";
+"How to launch the app" = "アプリを開く方式";
+"Open the exist one first (default)" = "先に開いているアプリを開く(デフォルト)";
+"Always Spawn a new instance at current desktop" = "現在のスペースに新たに開く";
