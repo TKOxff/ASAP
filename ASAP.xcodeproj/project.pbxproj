@@ -62,7 +62,7 @@
 		BB0E50302776D6E500E53E0E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB0E50332776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		BB0E50342776E04A00E53E0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BB56D11226019271007F4BC8 /* ASAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB56D11226019271007F4BC8 /* ASAP Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASAP Shortcuts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB56D11526019271007F4BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB56D11726019271007F4BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB56D11926019271007F4BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		BB56D11326019271007F4BC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB56D11226019271007F4BC8 /* ASAP.app */,
+				BB56D11226019271007F4BC8 /* ASAP Shortcuts.app */,
 				BB56D17E260227A9007F4BC8 /* ASAPLauncher.app */,
 			);
 			name = Products;
@@ -250,9 +250,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB56D11126019271007F4BC8 /* ASAP */ = {
+		BB56D11126019271007F4BC8 /* ASAP Shortcuts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP" */;
+			buildConfigurationList = BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP Shortcuts" */;
 			buildPhases = (
 				82E7C1EF8CA95BA6B89C6A29 /* [CP] Check Pods Manifest.lock */,
 				BB56D10E26019271007F4BC8 /* Sources */,
@@ -265,9 +265,9 @@
 			);
 			dependencies = (
 			);
-			name = ASAP;
+			name = "ASAP Shortcuts";
 			productName = ASAP;
-			productReference = BB56D11226019271007F4BC8 /* ASAP.app */;
+			productReference = BB56D11226019271007F4BC8 /* ASAP Shortcuts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB56D17D260227A9007F4BC8 /* ASAPLauncher */ = {
@@ -319,7 +319,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB56D11126019271007F4BC8 /* ASAP */,
+				BB56D11126019271007F4BC8 /* ASAP Shortcuts */,
 				BB56D17D260227A9007F4BC8 /* ASAPLauncher */,
 			);
 		};
@@ -689,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP" */ = {
+		BB56D12526019271007F4BC8 /* Build configuration list for PBXNativeTarget "ASAP Shortcuts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB56D12626019271007F4BC8 /* Debug */,
