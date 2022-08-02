@@ -1,6 +1,6 @@
-# ASAP Shortcuts (Lite)
+# macOS Shortcuts (unmaintained)
 
-ASAP is a global shortcuts App for macOS, written in Swift and SwiftUI.
+It is a global shortcuts App for macOS, written in Swift and SwiftUI.
 
 <img src="public/asap.png" width=500>
 
@@ -32,7 +32,7 @@ You can manage it from System Preferences -> Keyboard -> Shortcuts
 
 ## Installation
 
-It's available on [App Store](https://apps.apple.com/us/app/asap-shortcuts/id1558863477)
+It's available on [App Store]
 
 ## Dependences  
 
